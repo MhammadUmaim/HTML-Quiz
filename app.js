@@ -247,4 +247,26 @@ form.appendChild(submitButton);
 // Append the form to the main div
 MainDiv.appendChild(form);
 
-setInterval();
+function stopWatch() {
+  document.getElementById("start").style.display = "none";
+  document.getElementById("stopWatch").style.display = "block";
+  mins.innerText = minsCounter;
+  secs.innerText = secsCounter;
+  secsCounter--;
+
+  if (secsCounter === 0) {
+    secs.innerText = "0" + secsCounter;
+    secsCounter = 59;
+    minsCounter--;
+    mins.innerText = minsCounter;
+  }
+  if (secsCounter < 10) {
+    secs.innerText = "0" + secsCounter;
+  }
+}
+
+var secs = document.getElementById("secs");
+var secsCounter = 59;
+
+var mins = document.getElementById("mins");
+var minsCounter = 14;
