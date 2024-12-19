@@ -270,3 +270,64 @@ var secsCounter = 59;
 
 var mins = document.getElementById("mins");
 var minsCounter = 14;
+var mins = 15;
+    var secs = 0;
+    var timer;
+
+    function startStopWatch() {
+      document.getElementById("start").disabled = true;  // Disable the start button after starting
+      timer = setInterval(stopWatch, 1000);
+    }
+
+    function stopWatch() {
+      if (secs === 0) {
+        if (mins === 0) {
+          clearInterval(timer); // Stop the timer when time is up
+          alert("Time's up!");
+        } else {
+          mins--;
+          secs = 59;
+        }
+      } else {
+        secs--;
+      }
+      
+      document.getElementById("mins").textContent = mins < 10 ? "0" + mins : mins;
+      document.getElementById("secs").textContent = secs < 10 ? "0" + secs : secs;
+    }
+    var mins = 15;
+var secs = 0;
+var timer;
+
+function startTimer() {
+  timer = setInterval(function() {
+    if (secs === 0) {
+      if (mins === 0) {
+        clearInterval(timer);
+        submitQuiz();
+      } else {
+        mins--;
+        secs = 59;
+      }
+    } else {
+      secs--;
+    }
+
+    document.getElementById("mins").textContent = mins < 10 ? "0" + mins : mins;
+    document.getElementById("secs").textContent = secs < 10 ? "0" + secs : secs;
+  }, 1000);
+}
+
+function submitQuiz() {
+  alert("Time's up! The quiz is being submitted.");
+}
+  
+startTimer();
+document.getElementById("start").addEventListener("click", function() {
+  document.getElementById("start").style.display = "none";
+  startTimer();
+});
+
+function startTimer() {
+  console.log("Timer started!");
+}

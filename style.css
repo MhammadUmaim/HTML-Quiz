@@ -169,21 +169,15 @@ h1{
   background-color: #bbfff7;
   transition: all 0.2s ease-in;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.timer {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* #start {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {

@@ -17,17 +17,23 @@
     />
   </head>
   <body>
+    <div class="timer" id="stopWatch">
+    <span id="mins">15</span>
+    <span style="color: black"> : </span>
+    <span id="secs">00 </span>
+  </div>
+  <button onclick="startStopWatch()" id="start">Start</button>
+
+
+     </span>
+      <span id="secs"> </span>
+    </div>
     <div class="haeding">
       <h1>HTML-Quiz</h1>
     </div>
     <div id="main"></div>
 
-    <button onclick="setInterval(stopWatch, 1000)" id="start">start</button>
-    <div class="timer" id="stopWatch">
-      <span id="mins">15 </span>
-      <span style="color: black"> : </span>
-      <span id="secs">00 </span>
-    </div>
+    
   </body>
   <script src="app.js"></script>
 </html>
