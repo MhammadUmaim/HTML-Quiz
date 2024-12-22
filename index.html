@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML-Quiz</title>
-    <link rel="shortcut icon" href="./quiz.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="graduated.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,25 +15,67 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Montserrat+Subrayada:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand&family=Patrick+Hand+SC&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Recursive:wght@300..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <div class="timer" id="stopWatch">
-    <span id="mins">15</span>
-    <span style="color: black"> : </span>
-    <span id="secs">00 </span>
-  </div>
-  <button onclick="startStopWatch()" id="start">Start</button>
+</head>
+<body>
+  
+  <div class="user-info" id="user-info">
+    <h2 id="stn">Student Information</h2>
+    <form class="user-form" onsubmit="startCount(event)">
+      <div class="input-fields">
+      <div class="inp-box">
 
-
-     </span>
-      <span id="secs"> </span>
+        <label for="inpName">Full Name :</label>
+        <input
+          type="text"
+          name="name"
+          id="inpName"
+          onInput="nameValid(event)"
+          class="inpField"
+          placeholder="Enter Your Name"
+          required
+        />
+        <span class="error" id="error1"></span>
+      </div>
+      <div class="inp-box">
+        <label for="inpRoll">Roll Number :</label>
+        <input
+          type="number"
+          name="name"
+          id="inpRoll"
+          onInput="rollValid(event)"
+          class="inpField"
+          placeholder="Enter your roll number"
+          required
+        />
+        <span class="error" id="error2"></span>
+      </div>
+      <div class="inp-box">
+        <label for="inpName">Email Address :</label>
+        <input
+          type="email"
+          name="name"
+          id="inpEmail"
+          onInput="emailValid(event)"
+          class="inpField"
+          placeholder="Enter your email"
+          required
+        />
+        <span class="error" id="error3"></span>
+      </div>
     </div>
-    <div class="haeding">
-      <h1>HTML-Quiz</h1>
+    <div class="btns">
+      <button type="submit" id="start" class="btn-s" onclick="GoToQuiz()">
+        Start
+      </button>
     </div>
-    <div id="main"></div>
+    </form>
 
-    
-  </body>
-  <script src="app.js"></script>
+
+<!-- <img src="" alt=""> -->
+
+
+
+
+</body>
+<script src="app.js"></script>
 </html>
