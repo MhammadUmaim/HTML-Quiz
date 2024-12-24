@@ -39,3 +39,7 @@ let GoToQuiz = () =>{
 
 }
 
+let startCount = () => {
+  window.location.href = "./quiz.html";
+}
+

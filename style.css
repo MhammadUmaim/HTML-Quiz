@@ -145,22 +145,6 @@ h1 {
   
 }
 
-#mins{
-  position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
-}
-
 /* Main Container */
 #main {
   background: white;
@@ -204,21 +188,133 @@ label:hover {
   text-shadow: 1px 1px 5px rgba(0, 77, 64, 0.5);
 }
 
-
-
-
-
-
-
-
+ 
+#mins{
+  position: relative;
+  bottom: 10750px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 10750px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 10750px;
+  font-size: x-large ;
+}
 
 
 
 /* Responsive Styles */
+
+
+@media (max-width:2567px){
+    
+  #mins{
+    position: relative;
+    bottom: 10190px;
+    font-size: x-large ;
+  }
+  #secs{
+    position: relative;
+    bottom: 10190px;
+    font-size: x-large ;
+  }
+  #dots{
+    position: relative;
+    bottom: 10190px;
+    font-size: x-large ;
+  }
+  #start{
+    position: relative;
+    bottom: 10130px;
+  }
+  
+  }
+
+@media (max-width:1447px){
+    
+#mins{
+  position: relative;
+  bottom: 10190px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 10190px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 10190px;
+  font-size: x-large ;
+}
+#start{
+  position: relative;
+  bottom: 10130px;
+}
+
+}
+
+
+
+
+@media (max-width: 1027px){
+
+  
+  #mins{
+    position: relative;
+    bottom: 10200px;
+    font-size: x-large ;
+  }
+  #secs{
+    position: relative;
+    bottom: 10200px;
+    font-size: x-large ;
+  }
+  #dots{
+    position: relative;
+    bottom: 10200px;
+    font-size: x-large ;
+  }
+  #start{
+    position: relative;
+    bottom: 10135px;
+  }
+  
+
+
+
+
+}
+
 @media (max-width: 768px) {
   #main {
       padding: 25px;
   }
+
+   
+#mins{
+  position: relative;
+  bottom: 10290px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 10290px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 10290px;
+  font-size: x-large ;
+}
+#start{
+  position: relative;
+  bottom: 10230px;
+}
 
   .user-div {
       padding: 20px;
@@ -238,21 +334,61 @@ label:hover {
   #main{
     width: 330px;
   }
+     
+#mins{
+  position: relative;
+  bottom: 12249px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 12249px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 12249px;
+  font-size: x-large ;
+}
+#start{
+  position: relative;
+  bottom: 12190px;
+}
 }
 
 
-@media screen and (max-width:378px){
+@media (max-width:378px){
   #main{
     width: 300px;
   }
   .user-div{
     font-size: small;
   }
+      
+#mins{
+  position: relative;
+  bottom: 11199px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 11199px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 11199px;
+  font-size: x-large ;
+}
+#start{
+  position: relative;
+  bottom: 11140px;
+}
 }
 
 
 
-@media screen and (max-width:327px){
+@media  (max-width:327px){
   #main{
     width: 250px;
     /* padding: 10px; */
@@ -262,6 +398,27 @@ label:hover {
     width: 95%;
     margin-left: -14px;
   }
+
+        
+#mins{
+  position: relative;
+  bottom: 11419px;
+  font-size: x-large ;
+}
+#secs{
+  position: relative;
+  bottom: 11419px;
+  font-size: x-large ;
+}
+#dots{
+  position: relative;
+  bottom: 11419px;
+  font-size: x-large ;
+}
+#start{
+  position: relative;
+  bottom: 11355px;
+}
 
 }
 
