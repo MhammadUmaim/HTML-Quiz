@@ -271,3 +271,4 @@ var questionsArray = [
   var mins = document.getElementById("mins");
   var minsCounter = 14;
   
+  
