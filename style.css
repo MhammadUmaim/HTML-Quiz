@@ -95,10 +95,10 @@ h1 {
   background: linear-gradient(135deg, #004d40, #02dac0);
   background-clip: text;
   color: transparent;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 800;
   position: relative;
-  top: 40px;
+  top: 20px;
   font-family: 'Poppins', sans-serif;
   font-family: "Comfortaa", serif;
   font-optical-sizing: auto;
@@ -188,21 +188,26 @@ label:hover {
   text-shadow: 1px 1px 5px rgba(0, 77, 64, 0.5);
 }
 
- 
-#mins{
+
+
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  font-size: xx-large;
   position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
+  bottom: 10580px;
+  letter-spacing: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
 }
-#secs{
+#start{
   position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 10750px;
-  font-size: x-large ;
+  bottom: 10510px;
 }
 
 
@@ -211,50 +216,17 @@ label:hover {
 
 
 @media (max-width:2567px){
-    
-  #mins{
-    position: relative;
-    bottom: 10190px;
-    font-size: x-large ;
-  }
-  #secs{
-    position: relative;
-    bottom: 10190px;
-    font-size: x-large ;
-  }
-  #dots{
-    position: relative;
-    bottom: 10190px;
-    font-size: x-large ;
-  }
   #start{
     position: relative;
-    bottom: 10130px;
+    bottom: 10510px;
   }
-  
   }
 
 @media (max-width:1447px){
-    
-#mins{
-  position: relative;
-  bottom: 10190px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 10190px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 10190px;
-  font-size: x-large ;
-}
-#start{
-  position: relative;
-  bottom: 10130px;
-}
+  #start{
+    position: relative;
+    bottom: 10510px;
+  }
 
 }
 
@@ -262,29 +234,13 @@ label:hover {
 
 
 @media (max-width: 1027px){
-
   
-  #mins{
-    position: relative;
-    bottom: 10200px;
-    font-size: x-large ;
-  }
-  #secs{
-    position: relative;
-    bottom: 10200px;
-    font-size: x-large ;
-  }
-  #dots{
-    position: relative;
-    bottom: 10200px;
-    font-size: x-large ;
-  }
+ 
   #start{
-    position: relative;
-    bottom: 10135px;
-  }
+  position: relative;
+  bottom: 10510px;
+}
   
-
 
 
 
@@ -295,26 +251,10 @@ label:hover {
       padding: 25px;
   }
 
-   
-#mins{
-  position: relative;
-  bottom: 10290px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 10290px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 10290px;
-  font-size: x-large ;
-}
-#start{
-  position: relative;
-  bottom: 10230px;
-}
+  #start{
+    position: relative;
+    bottom: 10510px;
+  }
 
   .user-div {
       padding: 20px;
@@ -334,26 +274,17 @@ label:hover {
   #main{
     width: 330px;
   }
-     
-#mins{
-  position: relative;
-  bottom: 12249px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 12249px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 12249px;
-  font-size: x-large ;
-}
-#start{
-  position: relative;
-  bottom: 12190px;
-}
+  .timer{
+    position:relative ;
+    bottom: 11820px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  #start{
+    position: relative;
+    bottom: 11750px;
+  }
 }
 
 
@@ -364,26 +295,14 @@ label:hover {
   .user-div{
     font-size: small;
   }
-      
-#mins{
-  position: relative;
-  bottom: 11199px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 11199px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 11199px;
-  font-size: x-large ;
-}
-#start{
-  position: relative;
-  bottom: 11140px;
-}
+  #start{
+    position: relative;
+    bottom: 10840px;
+  }
+  .timer{
+    position: relative;
+    bottom: 10910px; 
+  }
 }
 
 
@@ -398,28 +317,14 @@ label:hover {
     width: 95%;
     margin-left: -14px;
   }
-
-        
-#mins{
-  position: relative;
-  bottom: 11419px;
-  font-size: x-large ;
-}
-#secs{
-  position: relative;
-  bottom: 11419px;
-  font-size: x-large ;
-}
-#dots{
-  position: relative;
-  bottom: 11419px;
-  font-size: x-large ;
-}
-#start{
-  position: relative;
-  bottom: 11355px;
-}
-
+  #start{
+    position: relative;
+    bottom: 11050px;
+  }
+  .timer{
+    position: relative;
+    bottom: 11130px; 
+  }
 }
 
 
